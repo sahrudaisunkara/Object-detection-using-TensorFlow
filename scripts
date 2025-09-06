@@ -92,7 +92,4 @@ for i in range(classes.shape[1]):
 plt.imshow(image_np)
 plt.axis('off')
 plt.show()
-os.makedirs("results", exist_ok=True)
-output_path = "results/output.png"
-cv2.imwrite(output_path, cv2.cvtColor(image_np, cv2.COLOR_RGB2BGR))
-print(f"Output saved to {output_path}")
+
