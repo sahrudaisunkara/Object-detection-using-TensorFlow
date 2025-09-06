@@ -28,7 +28,7 @@ model = tf.saved_model.load(MODEL_PATH)
 # ===============================
 # Step 3: Load Image
 # ===============================
-IMAGE_PATH = "data/sample_image.png"
+IMAGE_PATH = "sample_image.png"
 
 image = Image.open(IMAGE_PATH).convert('RGB')
 image_np = np.array(image)
